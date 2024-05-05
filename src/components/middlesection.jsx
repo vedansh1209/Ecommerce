@@ -14,7 +14,7 @@ const middlesection = () => {
                     <p>Also Available on</p>
 
                 </div>
-                <div className="brandicons">
+                <div className="brand-icons">
                     <img src="/images/amazon.png" alt="" />
                     <img src="/images/flipkart.png" alt="" />
                 </div>
