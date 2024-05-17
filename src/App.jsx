@@ -4,18 +4,19 @@ import Contact from './Pages/Contact/Contact'
 import About from './Pages/AboutUs/AboutUs';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
+const path="https://ecommerce-vedansh1209.netlify.app";
 
 const router = createBrowserRouter([
     {
-      path: "/",
+      path: "${path}/",
       element: <MainPage/>,
     },
     {
-      path: "/contact",
+      path: "${path}/contact",
       element: <Contact/>,
     },
     {
-      path: "/about",
+      path: "${path}/about",
       element: <About/>,
     },
   ]);
