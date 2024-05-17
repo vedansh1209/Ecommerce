@@ -1,15 +1,31 @@
-import './App.css';
-import Nav from './components/navbar.jsx';
-import Mainc from './components/middlesection.jsx';
+import React from 'react'
+import MainPage from './Pages/MainPage/MainPage'
+import Contact from './Pages/Contact/Contact'
+import About from './Pages/AboutUs/AboutUs';
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
-const App = () => {
-  return (
-  <div>
-    <Nav />
-    <Mainc />
-  </div>
-  );
-};
+const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainPage/>,
+    },
+    {
+      path: "/contact",
+      element: <Contact/>,
+    },
+    {
+      path: "/about",
+      element: <About/>,
+    },
+  ]);
 
+
+function App() {
+    return (
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    )
+}
 
 export default App;
